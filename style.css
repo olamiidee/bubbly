@@ -277,10 +277,6 @@ a:visited{
     body{
         overflow-x: hidden;
     }
-    
-    .logo{
-        margin-right: 150px;
-    }
 
     .nav-links {
         position: absolute;
@@ -332,8 +328,8 @@ a:visited{
     }
 
     .image{
-        width: 50vw;
-        height: 70vh;
+        width: 70vw;
+        height: 50vh;
         border-radius: 10px;
         border: 5px solid palevioletred;
         padding-bottom: 150px;
@@ -346,6 +342,8 @@ a:visited{
         position: relative;
         bottom: 150px;
         text-align: center;  
+        
+    
     } 
 
     .team-name{
