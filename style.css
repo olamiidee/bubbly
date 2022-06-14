@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 12vh;
+    min-height: 10vh;
     border-bottom: 3px solid palevioletred;
     background-color: rgb(255, 255, 255);
 }
@@ -41,7 +41,6 @@ nav {
     justify-content: space-around;
     width: 40%;
     list-style: none;
-    /*margin-left: 150px;*/
 }
 
 .nav-links a {
@@ -49,10 +48,11 @@ nav {
     color: palevioletred;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: larger;
+    font-weight: bold;
+    font-size: 24px;
 }
 
-a:hover {
+.nav-links a:hover {
     color: rgba(90, 9, 9, 0.486) ;
     transition: .3s;
 }
@@ -87,6 +87,7 @@ nav ul li a:hover:before{
     transition: all 0.3s ease;
 }
 
+
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -103,7 +104,7 @@ nav ul li a:hover:before{
 /*......HOME SECTION......*/
 
 #home-wrapper{
-    margin-top: 12vh;
+    margin-top: 10vh;
     padding-top: 100px;
     text-align: center;
     background: #0d6efd;
@@ -237,13 +238,11 @@ nav ul li a:hover:before{
     color: #1DA1F2;
 }
 
-
 .team-div div{
     width: 50%;
     margin: auto;
     text-align: center;
 }
-
 
 .team-div div a{
     display: inline;
@@ -268,24 +267,26 @@ a:visited{
 
 /*......Media Queries......*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     .nav-links {
-        width: 50%;
-    }
-
-    
+        width: 60%;
+    }  
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     body{
         overflow-x: hidden;
+    }
+    
+    .logo{
+        margin-right: 150px;
     }
 
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 50vh ;
-        top: 12vh;
+        height: 80vh ;
+        top: 10vh;
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -305,6 +306,7 @@ a:visited{
         border: 2px solid white;
         border-radius: 5px;
         padding: 3px;
+        margin-left: 100px;
         background-color: palevioletred;
     }
 
@@ -313,18 +315,16 @@ a:visited{
     }
 
 
-
-
     #team{
-    margin: 100px 0;
-    background: #0dcaf0;
-    padding: 100px 0;
+        margin: 100px 0;
+        background: #0dcaf0;
+        padding-top: 150px;
     }
 
     #team-flex{
         width: 100vw;
         height: 100%;
-        margin: 50px auto;
+        margin: 0px auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -332,8 +332,8 @@ a:visited{
     }
 
     .image{
-        width: 70vw;
-        height: 50vh;
+        width: 50vw;
+        height: 70vh;
         border-radius: 10px;
         border: 5px solid palevioletred;
         padding-bottom: 150px;
@@ -360,10 +360,31 @@ a:visited{
     img {
         transition: none;
     }
-   
+    img:hover{
+        transform: none;
+    }
+
+
+
+    
 
 }
 
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
 
 
 
