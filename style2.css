@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    border-bottom: 3px solid palevioletred;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    color: palevioletred;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style: none;
+    /*margin-left: 150px;*/
+}
+
+.nav-links a {
+    position: relative;
+    color: palevioletred;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: larger;
+}
+
+a:hover {
+    color: rgba(90, 9, 9, 0.486) ;
+    transition: .3s;
+}
+
+/*nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: palevioletred;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s linear;
+}
+
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+} */
+
+.burger{
+    display: none;
+}
+
+.burger div {
+    background-color: palevioletred;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/*......HOME SECTION......*/
+
+#home-wrapper{
+    margin-top: 12vh;
+    padding-top: 100px;
+    text-align: center;
+    background: #0d6efd;
+}
+
+.bubbly-img{
+    width: 20%;    
+    animation: scaling 3s ease-in-out infinite;
+}
+
+@keyframes scaling{
+    0%, 100% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+#home-wrapper p{
+    color: white;
+    font-weight: 900;
+    margin: auto;
+    font-size: 30px;
+    width: 40%;
+}
+
+.blank-space {
+    height: 100px;
+}
+
+/*......ARTWORK SECTION......*/
+
+#arts{
+    background: #0dcaf0; 
+    width: 100vw;  
+    padding: 100px 0;
+}
+
+#arts .imgg{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.imgg img{
+    width: 30%;
+}
+
+.sneak-flex{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-around;
+    width: 80vw;
+    margin: 70px auto;   
+}
+
+.sneakpeek{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sneakpeek img{
+    width: 20vw;
+    height: 100%;
+    border: 5px palevioletred solid;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3) ;
+}
+
+.sneakpeek p{
+    width: 20vw;
+    height: 100%;
+    font-size: 20px;
+    padding: 50px;
+}
+
+/* .....TEAM SECTION......*/
+
+#team{
+    margin: 100px 0;
+    background: #0dcaf0;
+    padding: 100px 0;
+}
+
+#team-flex{
+    width: 80vw;
+    height: 400px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image{
+    width: 20vw;
+    height: 100%;
+    border-radius: 10px;
+    border: 5px solid palevioletred;
+    padding-bottom: 150px;
+    background: white;
+    margin: 0px 50px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3) ;
+}
+
+.text{
+    position: relative;
+    bottom: 150px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+} 
+
+.team-name{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+ #instagram{
+    font-size: 50px;
+    color: #E4405F;
+}
+
+#twitter{
+    font-size: 50px;
+    color: #1DA1F2;
+}
+
+
+.team-div div{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.team-div div a{
+    display: inline;
+    padding: 5px;
+}
+
+/*......OTHERS......*/
+
+img {
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+a:visited{
+    color: palevioletred;
+}
+
+
+
+/*......Media Queries......*/
+
+@media (max-width: 1200px) {
+    .nav-links {
+        width: 50%;
+    }
+
+    
+}
+
+@media (max-width: 1000px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 50vh ;
+        top: 12vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links  li{
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 3px;
+        background-color: palevioletred;
+    }
+
+    .burger div{
+        background-color: #fff;
+    }
+
+
+
+
+    #team{
+    margin: 100px 0;
+    background: #0dcaf0;
+    padding: 100px 0;
+    }
+
+    #team-flex{
+        width: 100vw;
+        height: 100%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        width: 70vw;
+        height: 50vh;
+        border-radius: 10px;
+        border: 5px solid palevioletred;
+        padding-bottom: 150px;
+        background: white;
+        margin: 0px 50px;
+        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3) ;
+    }
+
+    .text{
+        position: relative;
+        bottom: 150px;
+        text-align: center;  
+    } 
+
+    .team-name{
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    #twitter, #instagram{
+        font-size: 50px;
+    }
+
+    img {
+        transition: none;
+    }
+   
+
+}
+
+
+
+
+
+    
