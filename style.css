@@ -214,7 +214,7 @@ nav ul li a:hover:before{
 
 .text{
     position: relative;
-    bottom: 150px;
+    bottom: 160px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -228,7 +228,12 @@ nav ul li a:hover:before{
     font-weight: 900;
 }
 
- #instagram{
+.team-position{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#instagram{
     font-size: 50px;
     color: #E4405F;
 }
@@ -311,7 +316,6 @@ a:visited{
     }
 
 
-
     #team{
         margin: 100px 0;
         background: #0dcaf0;
@@ -328,23 +332,25 @@ a:visited{
         align-items: center;
     }
 
+    .team-div{
+        height: 60vh;
+    }
+
     .image{
-        width: 90vw;
+        width: 75vw;
         height: 50vh;
         border-radius: 10px;
         border: 5px solid palevioletred;
         padding-bottom: 150px;
         background: white;
         margin: 0px 50px;
-        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3) ;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3),0px -10px 10px rgba(0, 0, 0, 0.3) ;
     }
 
     .text{
         position: relative;
-        bottom: 150px;
+        bottom: 160px;
         text-align: center;  
-        
-    
     } 
 
     .team-name{
@@ -352,8 +358,15 @@ a:visited{
         font-weight: 900;
     }
 
+    .team-position{
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+
     #twitter, #instagram{
         font-size: 50px;
+        margin-top: 3px;
     }
 
     img {
