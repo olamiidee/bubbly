@@ -110,6 +110,7 @@ nav ul li a:hover:before{
     background: #0d6efd;
 }
 
+
 .bubbly-img{
     width: 20%;    
     animation: scaling 3s ease-in-out infinite;
@@ -129,7 +130,9 @@ nav ul li a:hover:before{
     font-weight: 900;
     margin: auto;
     font-size: 30px;
-    width: 40%;
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .blank-space {
@@ -266,14 +269,19 @@ a:visited{
     .nav-links {
         width: 60%;
     }  
-}
+
 
 @media (max-width: 1024px) {
     body{
         overflow-x: hidden;
     }
 
+    .logo{
+        font-size: 30px;
+    }
+
     .nav-links {
+        
         position: absolute;
         right: 0px;
         height: 50vh ;
@@ -289,6 +297,15 @@ a:visited{
 
     .nav-links  li{
         opacity: 0;
+    }
+
+    .nav-links a {
+        position: relative;
+        color: palevioletred;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: 100;
+        font-size: 24px;
     }
 
     .burger {
@@ -335,7 +352,22 @@ a:visited{
         background-color: palevioletred;
     }
 
+    .bubbly-img{
+        width: 40%;    
+        animation: scaling 3s ease-in-out infinite;
+    }
 
+
+
+    #home-wrapper p{
+        color: white;
+        font-weight: 400;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 100px;
+        font-size: 30px;
+        width: 70%;
+    }
 
     #team{
         margin: 100px 0;
