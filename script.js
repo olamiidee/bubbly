@@ -44,7 +44,7 @@ function carousel() {
     } 
     slides[myIndex-1].style.display = "block"; 
     dots[myIndex-1].className += " active"; 
-    setTimeout(carousel, 5000); // Change image every 5 seconds
+    setTimeout(carousel, 4000); // Change image every 5 seconds
 }
 
 function plusSlides(position) {
