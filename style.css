@@ -411,7 +411,8 @@ a:visited{
     }
 
     .team-div{
-        height: auto;
+        height: 60vh;
+        max-width: 100%;
     }
 
     .image{
@@ -447,16 +448,14 @@ a:visited{
         margin-top: 3px;
     }
 
-    img {
+    .team-div img {
         transition: none;
     }
-    img:hover{
+    
+    .team-div img:hover{
         transform: none;
     }
 
-
-
-    
 
 }
 
