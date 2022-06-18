@@ -305,7 +305,9 @@ footer{
     margin-top: 30px;
 }
 
-
+footer a{
+    color: palevioletred;
+}
 
 /*................Media Queries................*/
 
