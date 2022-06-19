@@ -504,20 +504,18 @@ footer a{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        border: 2px green solid;
     }
 
     .team-div{
-        height: 70%;
+        height: 70vh;
         width: 100%;
         text-align: center;
-        border: 2px solid red;
         padding-bottom: 0px;
     }
 
     .image{
         width: 75vw;
-        height: 50%;
+        height: px;
         border-radius: 10px;
         border: 5px solid palevioletred;
         padding-bottom: 150px;
@@ -530,7 +528,7 @@ footer a{
         position: relative;
         bottom: 160px;
         text-align: center;  
-        width: 50%;
+        width: 100%;
         margin: auto;
     } 
 
