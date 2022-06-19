@@ -341,12 +341,12 @@ nav ul li a:hover:before{
 }
   
 .img-wrapper {
-    height: 200px;
+    height: 220px;
     width: 100%;
 }
   
 .image{
-    height: 100%;
+    height: 95%;
     width: 100%;
 }
   
@@ -696,12 +696,12 @@ footer a{
     }
       
     .img-wrapper {
-        height: 250px;
+        height: 270px;
         width: 100%;
     }
       
     .image{
-        height: 100%;
+        height: 95%;
         width: 100%;
     }
       
