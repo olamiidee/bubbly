@@ -141,7 +141,7 @@ nav ul li a:hover:before{
     color: white;
     font-weight: 900;
     margin: auto;
-    font-size: 30px;
+    font-size: 25px;
     width: 50%;
     padding-bottom: 10px;
 }
@@ -155,7 +155,19 @@ nav ul li a:hover:before{
 #arts{
     background: #0dcaf0; 
     width: 100vw;  
-    padding: 100px 0;
+    padding: 50px 0px;
+    padding-bottom: 70px;
+}
+
+.sneaktext{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    letter-spacing: 4px;
+    font-size: 40px;
+    font-weight: 800;
+    color: palevioletred;
+    text-shadow: 2px 2px 2px white;
 }
 
 .sneakpeek{
@@ -193,14 +205,14 @@ nav ul li a:hover:before{
 
 .faq-details{
     width: 50%;
-    margin: 30px auto;
+    margin: 50px auto;
     text-align: center;
 }
 
 .faq-header{
     border: 2px solid palevioletred;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px 60px;
     width: 80%;
     margin: auto;
     cursor: pointer;
@@ -208,21 +220,31 @@ nav ul li a:hover:before{
 }
 
 .faq-text {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* .........TEAM SECTION..........*/
 
 #team{
     background: #0dcaf0;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.meet{
+    text-align: center;
+    margin-left: px;
+    letter-spacing: 4px;
+    font-size: 40px;
+    font-weight: 800;
+    color: palevioletred;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px white;
 }
 
 #team-flex{
     width: 80vw;
     height: 400px;
-    margin: 70px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -230,11 +252,11 @@ nav ul li a:hover:before{
 
 
 .image{
-    width: 20vw;
-    height: 100%;
+    width: 25vw;
+    height: 85%;
     border-radius: 10px;
     border: 5px solid palevioletred;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
     background: white;
     margin: 0px 50px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
@@ -242,7 +264,7 @@ nav ul li a:hover:before{
 
 .text{
     position: relative;
-    bottom: 160px;
+    bottom: 130px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -252,7 +274,7 @@ nav ul li a:hover:before{
 } 
 
 .team-name{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
 }
 
@@ -262,12 +284,12 @@ nav ul li a:hover:before{
 }
 
 #instagram{
-    font-size: 50px;
+    font-size: 40px;
     color: #E4405F;
 }
 
 #twitter{
-    font-size: 50px;
+    font-size: 40px;
     color: #1DA1F2;
 }
 
@@ -319,8 +341,8 @@ footer a{
 
 
 
-@media (max-width: 1024px) {
-    body{
+@media (max-width: 1025px) {
+    html,body{
         overflow-x: hidden;
     }
 
@@ -461,7 +483,17 @@ footer a{
     #team{
         margin-top: 0px;
         background: #0dcaf0;
-        padding-top: 150px;
+        padding-top: 50px;
+    }
+
+    .meet{
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 30px;
+        font-weight: 800;
+        padding-bottom: 30px;
+        color: palevioletred;
+        text-shadow: 2px 2px 2px white;
     }
 
     #team-flex{
@@ -470,24 +502,27 @@ footer a{
         margin: 0px auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        border: 2px green solid;
     }
 
     .team-div{
-        height: 100;
-        width: auto;
+        height: 70%;
+        width: 100%;
         text-align: center;
+        border: 2px solid red;
+        padding-bottom: 0px;
     }
 
     .image{
         width: 75vw;
-        height: 50vh;
+        height: 50%;
         border-radius: 10px;
         border: 5px solid palevioletred;
         padding-bottom: 150px;
         background: white;
-        margin: 0px 50px;
+        margin: 10px 50px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3),0px -5px 10px rgba(0, 0, 0, 0.3) ;
     }
 
@@ -495,6 +530,8 @@ footer a{
         position: relative;
         bottom: 160px;
         text-align: center;  
+        width: 50%;
+        margin: auto;
     } 
 
     .team-name{
@@ -511,6 +548,7 @@ footer a{
     #twitter, #instagram{
         font-size: 50px;
         margin-top: 3px;
+
     }
 
     .team-div img {
