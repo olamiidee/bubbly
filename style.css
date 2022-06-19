@@ -224,7 +224,7 @@ nav ul li a:hover:before{
 }
 
 /* .........TEAM SECTION..........*/
-
+/*
 #team{
     background: #0dcaf0;
     padding-top: 30px;
@@ -303,14 +303,85 @@ nav ul li a:hover:before{
     display: inline;
     padding: 5px;
 }
+*/
 
+
+
+
+#team{
+    width: 100%;
+    background: #0dcaf0;
+    padding-top: 30px;
+}
+  
+.team-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    margin: auto;
+  
+}
+.team-div{
+    width: 80%;
+    margin: 30px 40px;
+    border-radius: 10px;
+    border: 5px solid palevioletred;
+    background: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+}
+  
+.img-wrapper {
+    height: 200px;
+    width: 100%;
+}
+  
+.image{
+    height: 100%;
+    width: 100%;
+}
+  
+#team p{
+    text-align: center;
+}
+
+.team-div div a{
+    display: inline;
+    padding: 5px;
+}
+
+.team-name{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.team-position{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#instagram{
+    font-size: 40px;
+    color: #E4405F;
+}
+
+#twitter{
+    font-size: 40px;
+    color: #1DA1F2;
+}
+
+.linkss{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
 /*......OTHERS......*/
 
-.team-div img {
+.team-div {
     transition: transform .4s .1s ease-in-out;
 }
 
-.team-div img:hover{
+.team-div:hover{
     transform: scale(1.1);
 }
 
@@ -479,7 +550,7 @@ footer a{
         margin-top: 20px;
     }
 
-
+/*
     #team{
         margin-top: 0px;
         background: #0dcaf0;
@@ -555,7 +626,78 @@ footer a{
     
     .team-div img:hover{
         transform: none;
+    }   */
+
+    #team{
+        width: 100%;
+        background: #0dcaf0;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
+      
+    .team-flex{
+        display: block;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90vw;
+        margin: auto;
+      
+    }
+    .team-div{
+        width: 80%;
+        margin: 50px auto;
+        border-radius: 10px;
+        border: 5px solid palevioletred;
+        background: white;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3) ;
+    }
+      
+    .img-wrapper {
+        height: 250px;
+        width: 100%;
+    }
+      
+    .image{
+        height: 100%;
+        width: 100%;
+    }
+      
+    #team p{
+        text-align: center;
+    }
+    
+    .team-div div a{
+        display: inline;
+        padding: 5px;
+    }
+    
+    .team-name{
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+    
+    .team-position{
+        font-style: italic;
+        font-size: 1rem;
+    }
+    
+    #instagram{
+        font-size: 40px;
+        color: #E4405F;
+    }
+    
+    #twitter{
+        font-size: 40px;
+        color: #1DA1F2;
+    }
+    
+    .linkss{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+ 
 
 }
 
