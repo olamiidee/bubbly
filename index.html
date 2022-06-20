@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> bubbly </title>
         <link href="style.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://kit.fontawesome.com/44885d9653.js" crossorigin="anonymous"></script>
     </head>
@@ -29,9 +30,8 @@
        
         
         <main>
-
             <section id="home">
-                <div id="home-wrapper">
+                <div id="home-wrapper" data-aos="fade-up">
                     <img class="bubbly-img" src="IMG-20220607-WA0062-removebg-preview (1).png" alt="">
                     <div class="home-content">
                         <p>'Fun from Arts, Function From App' - once the rocket
@@ -56,8 +56,8 @@
             <div class="blank-space"></div>
 
             <section id="arts">
-                <p class="sneaktext"> sneakpeek </p>
-                <div class="sneakpeek">
+                <p class="sneaktext" data-aos="fade-right"> sneakpeek </p>
+                <div class="sneakpeek" data-aos="fade-right">
                     <img class="mySlides" src="sneak-1.jpeg" alt="">
                     <img class="mySlides" src="sneak-2.jpeg" alt="">
                     <img class="mySlides" src="sneak-3.jpeg" alt="">
@@ -218,9 +218,9 @@
                 </div>
             </section>  -->
 
-            <section id="team">
+            <section id="team" >
                 <p class="meet"> MEET THE TEAM </p>
-                <div class="team-flex">
+                <div class="team-flex" data-aos="fade-right">
                     <div class="team-div">
                         <div class="img-wrapper"> <img class="image" src="Mari .jpeg"> </div>
                         <p class="team-name"> Mari </p>
@@ -249,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="team-flex">
+                <div class="team-flex" data-aos="fade-left">
                     <div class="team-div">
                         <div class="img-wrapper"> <img class="image" src="ParkBoGum.jpeg"> </div>
                         <p class="team-name"> ParkBoGum </p>
@@ -280,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="team-flex">
+                <div class="team-flex" data-aos="fade-right">
                     <div class="team-div">
                         <div class="img-wrapper"> <img class="image" src="Ve.jpeg"> </div>
                         <p class="team-name"> Ve </p>
@@ -320,5 +320,12 @@
         </footer>
         
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: false,
+            });
+          </script>
     </body>
 </html>

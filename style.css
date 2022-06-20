@@ -204,7 +204,7 @@ nav ul li a:hover:before{
 /* .........FAQ SECTION..........*/
 
 #faqs{
-    
+    padding-bottom: 20px;
 }
 
 .faqs-text{
