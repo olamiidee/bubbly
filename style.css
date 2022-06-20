@@ -203,6 +203,25 @@ nav ul li a:hover:before{
 
 /* .........FAQ SECTION..........*/
 
+#faqs{
+    background:#0d6efd;
+    color: white;
+}
+
+.faqs-text{
+margin-top: 50px;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 4px;
+font-size: 40px;
+font-weight: 800;
+text-shadow: 2px 2px 2px white;
+}
+
+.faq1{
+    margin-top: 20px;
+}
+
 .faq-details{
     width: 50%;
     margin: 50px auto;
@@ -314,7 +333,6 @@ nav ul li a:hover:before{
 
 .meet{
     text-align: center;
-    margin-left: px;
     letter-spacing: 4px;
     font-size: 40px;
     font-weight: 800;
