@@ -167,7 +167,6 @@ nav ul li a:hover:before{
     font-size: 40px;
     font-weight: 800;
     color: palevioletred;
-    text-shadow: 2px 2px 2px white;
 }
 
 .sneakpeek{
@@ -214,7 +213,6 @@ text-align: center;
 letter-spacing: 4px;
 font-size: 40px;
 font-weight: 800;
-text-shadow: 2px 2px 2px white;
 }
 
 .faq1{
@@ -337,7 +335,6 @@ text-shadow: 2px 2px 2px white;
     font-weight: 800;
     color: palevioletred;
     padding-top: 20px;
-    text-shadow: 2px 2px 2px white;
 }
   
 .team-flex{
@@ -549,7 +546,6 @@ footer a{
         font-size: 40px;
         font-weight: 800;
         color: palevioletred;
-        text-shadow: 2px 2px 2px white;
     }
     
     .mySlides{
