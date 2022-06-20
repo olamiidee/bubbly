@@ -204,12 +204,11 @@ nav ul li a:hover:before{
 /* .........FAQ SECTION..........*/
 
 #faqs{
-    background:#0d6efd;
-    color: white;
+    
 }
 
 .faqs-text{
-margin-top: 50px;
+margin-top: 30px;
 text-transform: uppercase;
 text-align: center;
 letter-spacing: 4px;
@@ -427,6 +426,10 @@ footer{
 
 footer a{
     color: palevioletred;
+}
+
+.bubbly{
+    display: none;
 }
 
 /*................Media Queries................*/
@@ -758,8 +761,11 @@ footer a{
         text-align: center;
     }
 
- 
-
+    .bubbly{
+        display: block;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
 }
 
 .nav-active{
